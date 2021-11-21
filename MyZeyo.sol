@@ -20,5 +20,9 @@ contract MyZeyo is ERC20 {
       _mint(to, amount);
    
    }
+   
+   function burn (uint amount) external {
+       _burn(msg.sender, amount);
+   }
 
 }
